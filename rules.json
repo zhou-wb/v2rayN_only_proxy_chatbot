@@ -1,0 +1,65 @@
+[
+  {
+    "outboundTag": "direct",
+    "protocol": [
+      "bittorrent"
+    ],
+    "enabled": true,
+    "remarks": "绕过bittorrent"
+  },
+  {
+    "outboundTag": "proxy",
+    "domain": [
+      "api.ip.sb"
+    ],
+    "enabled": true,
+    "remarks": "api.ip.sb"
+  },
+  {
+    "port": "443",
+    "network": "udp",
+    "outboundTag": "block",
+    "enabled": true,
+    "remarks": "阻断udp443"
+  },
+  {
+    "outboundTag": "proxy",
+    "domain": [
+      "domain:openai.com",
+      "domain:chatgpt.com",
+      "domain:api.openai.com",
+      "domain:crixet.com",
+      "domain:anthropic.com",
+      "domain:claude.ai",
+      "domain:gemini.google.com",
+      "domain:play.google.com",
+      "domain:generativelanguage.googleapis.com",
+      "domain:ai.google.dev",
+      "domain:notebooklm.google.com"
+    ],
+    "enabled": true,
+    "remarks": "代理Chatbot"
+  },
+  {
+    "outboundTag": "direct",
+    "ip": [
+      "geoip:private"
+    ],
+    "enabled": true,
+    "remarks": "绕过局域网IP"
+  },
+  {
+    "outboundTag": "direct",
+    "domain": [
+      "geosite:private"
+    ],
+    "enabled": true,
+    "remarks": "绕过局域网域名"
+  },
+  {
+    "port": "0-65535",
+    "outboundTag": "direct",
+    "enabled": true,
+    "remarks": "最终直连"
+  }
+]
